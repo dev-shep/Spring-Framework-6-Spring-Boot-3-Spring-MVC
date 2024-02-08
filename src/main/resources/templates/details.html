@@ -12,5 +12,22 @@
         <li th:text="${user.lastName}"></li>
         <li th:if="${user.email == null}" th:text="${'no tiene email'}"></li>
     </ul>
+
+
+    <table th:if="${not #lists.isEmpty(users)}">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>lastName</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="user: ${users}">
+                <td th:text="${user.name}"></td>
+                <td th:text="${user.lastName}"></td>
+                <td th:if="${user.email == null}" th:text="'----'"></td>
+            </tr>
+        </tbody>
 </body>
 </html>
