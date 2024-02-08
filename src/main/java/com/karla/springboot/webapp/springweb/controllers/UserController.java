@@ -31,7 +31,7 @@ public class UserController {
 
         List<User> users = Arrays.asList(new User("Karla", "Limon"),
         new User("Karen", "Gonzalez","x@hotmail.com"),
-        new User("Roe", "Lopez","prueba@hotmail.com"),
+        new User("Roe", "Lopez","prueba@gmail.com"),
         new User("Row", "Perez") );
 
         model.addAttribute("users",users);
