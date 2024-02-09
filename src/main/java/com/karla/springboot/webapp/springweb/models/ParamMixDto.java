@@ -1,21 +1,21 @@
 package com.karla.springboot.webapp.springweb.models;
 
-public class ParamDto {
+public class ParamMixDto {
     private String message;
     private Integer code;
     
-    public ParamDto(String message) {
+    public ParamMixDto(String message) {
         this.message = message;
     }
 
-    public ParamDto(Integer code) {
+    public ParamMixDto(Integer code) {
         this.code = code;
     }
 
-    public ParamDto() {
+    public ParamMixDto() {
     }
 
-    public ParamDto(String message, Integer code) {
+    public ParamMixDto(String message, Integer code) {
         this.message = message;
         this.code = code;
     }
