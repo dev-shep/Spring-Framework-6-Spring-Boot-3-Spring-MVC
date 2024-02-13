@@ -29,5 +29,8 @@
                 <td th:if="${user.email == null}" th:text="'----'"></td>
             </tr>
         </tbody>
-</body>
+        <a th:href="@{/list}">Ver listado</a>
+
+        <a th:href="@{'/api/var/foo?message' + ${title}}">Ver mensaje</a>
+    </body>
 </html>
